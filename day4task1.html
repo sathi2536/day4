@@ -11,15 +11,15 @@
     // To compare two JSON objects with the same properties but in a different order
 // we should convert them to a string and then compare the strings
 
-let obj1 = { name: "Person 1", age: 5 };
-let obj2 = { age: 5, name: "Person 1" };
+let va1 = { name: "Person 1", age: 5 };
+let va2 = { age: 5, name: "Person 1" };
 
-var Obj1=JSON.stringify(obj1);
-var Obj2=JSON.stringify(obj2);
+var ObjOne=(va1.name,va1.age)
+var ObjTwo=(va2.name,va2.age)
 
 
 
-if (Obj1 === Obj2) {
+if (ObjOne === ObjTwo) {
     console.log("The objects are the same.");
   } else {
     console.log("The objects are different.");
